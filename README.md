@@ -1,133 +1,92 @@
 # vue3-admin-template
 
-**English** | [中文](./README-zh_CN.md)
+> 这是一个基础的 vue3 admin 管理后台。它只包含了 Element-Plus UI & axios & svg-icon& permission control & lint，这些搭建后台必要的东西。
 
-> A minimal vue3 admin template with Element-Plus UI & axios & permission control & lint & hook
 
-A new  generation admin  construct   using  vue3(setup-script)+vite2+element-plus ，It's fast!
+本架构使用的技术为：vue3(setup-script)+vite2+element-plus 的新一代的前端框架，It's fast!
 
-Use eslint+prettier+gitHooks format and verification code to improve code standardization and development efficiency
+使用 eslint+prettier+gitHooks 格式和校验代码,提高代码规范性和开发效率
 
-Vite need Node.js >= 12.0.0。
+Vite 需要 Node.js 版本 >= 12.0.0。
 
-## Update log
+## 更新日志
 
---- to look the doc
-
-- [真香定律！带你用vue3+vite2撸后台（系列文章入口）](https://juejin.cn/post/7036302298435289095)
-
-## Documents
+---请查看架构文档
 
 - [真香定律！带你用vue3+vite2撸后台（系列文章入口）](https://juejin.cn/post/7036302298435289095)
 
-## Online experience
+
+## 文档
+
+- [真香定律！带你用vue3+vite2撸后台（系列文章入口）](https://juejin.cn/post/7036302298435289095)
+
+## 线上体验
 
 [github address](https://github.com/jzfai/vue3-admin-template.git)
 
 [Access address](http://8.135.1.141/vue3-admin-template)
 
-国内体验地址：http://8.135.1.141/vue3-admin-template
-
 github 地址：  https://github.com/jzfai/vue3-admin-template.git
 
-## Demo
-
- ---- Let's look at the loading speed and the size of the built package first.：
-
-![template-speed-analysis](http://8.135.1.141/file/images/template-speed-analysis.png)
-
-![template-demo](http://8.135.1.141/file/images/plus-demo.png)
-
-## Related items
-
-The framework is available in js, ts , plus and electron versions
-- js version：[vue3-element-admin](https://github.com/jzfai/vue3-admin-template.git)
-- ts version：[vue3-element-ts](https://github.com/jzfai/vue3-admin-ts.git)
-- js version for plus：[vue3-element-plus](https://github.com/jzfai/vue3-admin-plus.git)
-- js version for electron：[vue3-element-electron](https://github.com/jzfai/vue3-admin-electron.git)
-- react version： [react-admin-template](https://github.com/jzfai/react-admin-template.git)
-- java Micro-service background data：[micro-service-plus](https://github.com/jzfai/micro-service-plus)
-> development and  experience：two words  Really fragrant！！！！！
+国内体验地址：http://8.135.1.141/vue3-admin-template
 
 
+## 相关项目
 
-#### Comparison of performance between vue3 and vue2
+框架有js，ts，plus和electron版本
 
-- 41% reduction in package size
+- js版本：[vue3-element-admin](https://github.com/jzfai/vue3-admin-template.git)
+- ts版本：[vue3-element-ts](https://github.com/jzfai/vue3-admin-ts.git)
+- js实例参考plus版本：[vue3-element-plus](https://github.com/jzfai/vue3-admin-plus.git)
+- electron版本：[vue3-element-electron](https://github.com/jzfai/vue3-admin-electron.git)
+- react版本： [react-admin-template](https://github.com/jzfai/react-admin-template.git)
+- java微服务后台数据：[micro-service-plus](https://github.com/jzfai/micro-service-plus)
 
-- The initial rendering is 55% faster, the update rendering is 133% faster
-
-- Memory reduction 54%
-
-- **Use Proxy instead of defineProperty to implement data responsiveness**
-
-- **Rewrite the implementation of virtual DOM and Tree-Shaking**
+> 开发和使用感受：两个字 真香！！！！！
 
 
-[Comparison of packaging speed between vite2 and webpack](https://github.com/jzfai/vue3-admin-template/issues/2)
-
-## Build Setup
+## 构建步骤
 
 ```bash
-# clone the project
+# 克隆项目
 git clone https://github.com/jzfai/vue3-admin-template.git
 
-# enter the project directory
-cd vue3-admin-template
+# 进入项目目录
+cd  vue3-admin-template
 
 # pnpm address https://pnpm.io/zh/motivation
-# install dependency(Recommend use pnpm)
-# you can  use "npm -g i pnpm" to install pnpm 
+# 安装依赖(建议用pnpm)
+# 你可以使用 "npm -g i pnpm" 去安装pnpm
 pnpm i
 
-# develop
+# 启动服务
 pnpm run dev
 ```
 
-using the browser to open http://localhost:5001
+浏览器访问 http://localhost:5001
 
-## Build
+
+## 发布
 
 ```bash
-# build for test environment
-pnpm run build-test
+# 构建测试环境
+pnpm run build-serve
 
-# build for production environment
-pnpm run  build
+# 构建生产环境
+pnpm run build
 ```
 
-## Others
+## 其它
 
 ```bash
-# preview the release environment effect
+# 预览发布环境效果
+pnpm run preview:build-serve
+
+# 预览生产环境
 pnpm run preview
 
-# code format check
+# 代码格式检查并自动修复
 pnpm run lint
-
 ```
 
-## Extra
-
-Architecture development is not easy. If you feel good, please give me a **start**. The architecture is still being improved. Welcome to join me in development and become Contributors together! ! ! !
-
-
-## Browsers support
-
-Note: Vue3 is not supported the Internet Explorer
-
-Modern browsers and Internet Explorer 11+.
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-|Edge| last 2 versions| last 2 versions| last 2 versions
-
-## Discussion and Communication
-[WeChat group](http://8.135.1.141/file/images/wx-groud.png)
-
-## License
-
-[MIT](https://github.com/jzfai/vue3-admin-template/blob/master/LICENSE) license.
-
-Copyright (c) 2021-present  kuanghua
 
